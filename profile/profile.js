@@ -2,7 +2,7 @@ import '../auth/user.js';
 // > Part A: import updateProfile from fetch-utils.js
 // > Part B: import getUser and getProfile from fetch-utils.js
 import '../auth/user.js';
-import { updateProfile } from '../fetch-utils.js';
+import { getUser, updateProfile, getProfile } from '../fetch-utils.js';
 
 // > Part B: get the user
 const user = null; // ???
@@ -20,6 +20,9 @@ window.addEventListener('load', async () => {
     // > Part B:
     //      - get the profile based on user.id
     //      - set profile and error state from response object
+    const response = await getProfile(user.id);
+    error = response.error;
+    profile = response.data;
 
     if (error) {
         displayError();

@@ -2,6 +2,7 @@
 import '../auth/user.js';
 // > Part D import getUser and getProfiles from fetch-utils
 import { renderProfile } from '../render-utils.js';
+import { getUser, getProfiles } from '../fetch-utils.js';
 
 const profileList = document.getElementById('profile-list');
 

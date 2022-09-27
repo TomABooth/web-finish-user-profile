@@ -26,9 +26,14 @@ window.addEventListener('load', async () => {
 
 async function displayProfiles() {
     // > Part D: get the current user
-    const user = null; // ???
+    const user = getUser(); // ???
 
     for (const profile of profiles) {
+        const user = getUser();
+        for (const profile of profiles) {
+            const profileEl = renderProfile(profile, user.id);
+            profileList.append(profileEl);
+        }
         // > Part D:
         //      - call renderProfile passing in the profile and
         //        the current user's id:

@@ -71,3 +71,5 @@ export async function getProfiles() {
 
 //     return url;
 // }
+
+// enabled RLS to test

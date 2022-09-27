@@ -5,7 +5,7 @@ import '../auth/user.js';
 import { getUser, updateProfile, getProfile } from '../fetch-utils.js';
 
 // > Part B: get the user
-const user = null; // ???
+const user = getUser(); // ???
 
 const errorDisplay = document.getElementById('error-display');
 const profileForm = document.getElementById('profile-form');

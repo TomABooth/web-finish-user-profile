@@ -45,11 +45,6 @@ export async function getProfiles() {
     return await client.from('profiles').select();
 }
 
-export async function getProfile(id) {
-    const response = await client.from('profiles').select().match({ id }).maybeSingle();
-    return response;
-}
-
 // TODO:
 // export async function uploadImage(bucketName, imageName, imageFile) {
 //     // we can use the storage bucket to upload the image,

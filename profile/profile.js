@@ -1,6 +1,7 @@
 import '../auth/user.js';
 // > Part A: import updateProfile from fetch-utils.js
 // > Part B: import getUser and getProfile from fetch-utils.js
+import '../auth/user.js';
 
 // > Part B: get the user
 const user = null; // ???
@@ -46,7 +47,7 @@ profileForm.addEventListener('submit', async (e) => {
     // > Part A
     //      - create a profile update object
     //      - call updateProfile passing in profile update object, capture the response
-    const response = null; // ??????
+    const formData = new FormData(profileForm);
 
     error = response.error;
 

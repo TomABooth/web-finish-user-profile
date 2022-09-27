@@ -10,6 +10,9 @@ let profiles = [];
 
 window.addEventListener('load', async () => {
     // > Part D: await getProfiles and assign error and profiles state
+    const response = await getProfiles();
+    error = response.error;
+    profiles = response.data;
 
     if (error) {
         // eslint-disable-next-line no-console
